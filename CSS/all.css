@@ -1,0 +1,514 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}   
+*,*:before,*:after{
+    box-sizing:border-box
+}
+body {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg");
+    background-repeat: no-repeat;
+    background-position: right top,-219px calc(100vh - 180px),calc(100vw - 210px) 245vh,75px 385vh;
+    background-size: 851px 768px,360px 360px,310px 310px,150px 150px;
+}
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 16px;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.header img {
+    width: 218px;
+    height: auto;
+}
+@media(max-width:576px){
+    .header {
+        border-bottom: 2px solid #FFD153;
+    }
+    .header img {
+        width: 130px;
+        height: 24px;
+    }
+}
+.plan {
+    line-height: 1.5;
+    padding: 8px 32px;
+    color: #FFFFFF;
+    background-color: #FF5D50;
+    border-radius: 22px;
+    margin: 24px 0;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 217px;
+}
+.banner-item h1 {
+    font: normal normal bold 18px/26px Noto Sans TC;
+    color: #56C4C5;
+    margin-bottom: 8px;
+}
+.banner-item p {
+    font: normal normal bold 48px/70px Noto Sans TC;
+    line-height: 1.5;
+    color: #221E1F;
+    padding: 0px;
+    margin-bottom: 16px;
+}
+.banner-item h3 {
+    font: normal normal normal 20px/29px Noto Sans TC;
+    color: #221E1F;
+}
+.banner-pic img {
+    max-width: 532px;
+    height: 534px;
+}
+.banner-pic {
+    width: 49%;
+}
+@media (max-width:768px){
+    body {
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-position: 20px 392px;
+        background-size: 334px 245px;
+    }
+    .banner {
+        margin-bottom: 92px;
+    }
+}
+@media (max-width:768px){
+    .banner {
+        flex-direction: column;
+    }
+    .banner-item h1 {
+        font-size: 16px;
+    }
+    .banner-item p {
+        font-size: 32px;
+    }
+    .banner-item h3 {
+        font-size: 16px;
+    }
+    .banner-pic {
+        width: 304px;
+        height: 305px;
+    }
+    .banner-pic img {
+        width: 100%;
+        height: auto;
+    }
+}
+.social {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.social-name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.social h4 {
+    font: normal normal bold 32px/46px Noto Sans TC;
+    color: #221E1F;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.social-item {
+    width: 33.3333%;
+}
+.social-item img {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+}
+@media (max-width:768px) {
+    .social-item {
+        width: 100%;
+        margin-bottom: 24px;
+    } 
+}
+.social-item h5 {
+    text-align: center;
+    font: normal normal bold 24px/35px Noto Sans TC;
+    color: #221E1F;
+    padding: 24px 0px;
+}
+.social-item p {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #747474;
+}
+section {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 16px;
+}
+.role-bar h2{
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+.role-bar p{
+    text-align: center;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+.role-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.role {
+    width: calc(25% - 16px);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    opacity: 1; 
+    margin-top: 48px;
+}
+.role img {
+    border-radius: 12px 12px 0px 0px;
+}
+@media(max-width:992px){
+    .role {
+        width: 48%;
+    }
+}
+@media(max-width:576px){
+    .role {
+        width: 100%;
+    }
+}
+.role h3{
+    text-align: center;
+    font: normal normal bold 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #56C4C5;
+    padding: 16px 0px;
+}
+.role p{
+    padding-bottom: 24px;
+}
+.role-list .role p {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    opacity: 1;
+}
+.function-sec {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.function {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 507px;
+    gap: 28px;
+}
+.function li {
+    width: 230px;
+    padding: 32px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+.function h4 {
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+.function p {
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 86px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 50%;
+}
+.icon img {
+    width: 52px;
+    height: 52px;
+}
+.function-text {
+    width: 40%;
+}
+.function-text h5 {
+    text-align: left;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-bottom: 16px;
+}
+.function-text p {
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-bottom: 24px;
+}
+.function-text a {
+    display: inline-block;
+    text-align: center;
+    font: normal normal normal 18px/26px Comfortaa;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding: 12px 32px;
+}
+@media(max-width:992px){
+    .function-sec{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .function-text {
+        width: 100%;
+    }
+    .function-text h5 {
+        text-align: center;
+    }
+    .function-text p {
+        text-align: center;
+    }
+    .function-text a {
+        text-align: center;
+        margin-bottom: 44px;
+    }
+}
+@media(max-width:576px){
+    .function {
+        flex-direction: column;
+    }
+}
+.praise {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    margin-bottom: 24px;
+}
+.praise h2 {
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-top: 100px;
+    margin-bottom: 104px;
+}
+.praise-img {
+    position: absolute;
+    top: -50px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+.comment ul {
+    display: flex;
+    gap: 16px;
+}
+.comment li {
+    max-width: 352px;
+    padding: 48px 32px 24px;
+    position: relative;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+}
+.comment p{
+    padding-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.comment h3 {
+    text-align: left;
+    font: normal normal bold 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.company {
+    display: flex;
+    justify-content: space-between;
+}
+.company .person {
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+}
+.company .fivestar img {
+    width: 16.78px;
+    height: 16px;
+}
+.fivestar {
+    display: flex;
+    gap: 8.22px;
+}
+@media(max-width:992px){
+    .comment ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+}
+.pages {
+    display: flex;
+    justify-content: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0px 16px;
+    gap: 8px;
+    margin-bottom: 100px;
+}
+.pages .dot {
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    background: #DDDDDD 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+}
+.footer {
+    width: 100%;
+    height: 503px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.footerbox {
+    height: 320px;
+}
+.footerbox img {
+    display: none;
+}
+.footer {
+    text-align: center;
+}
+.footer-banner h2 {
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-bottom: 48px;
+}
+.footer-banner a {
+    display: inline-block;
+    font: normal normal normal 18px/26px Comfortaa;
+    color: #FFFFFF;
+    background: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    padding: 12px 32px;
+    margin-bottom: 100px;
+}
+.copyright p {
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    letter-spacing: 0px;
+    color: #221E1F;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    padding: 16px 0px;
+}
+@media (max-width:768px){
+    .pages {
+        margin-bottom: 60px;
+    }
+    .footer {
+        background: none;
+    }
+    .footerbox {
+        height: 293px;
+    }
+    .footerbox img {
+        display: block;
+        width: 100%;
+    }
+    .footer-banner h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .footer-banner a {
+        margin-bottom: 60px;
+    }
+}
